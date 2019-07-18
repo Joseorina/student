@@ -1,0 +1,32 @@
+class Student:
+    def __init__(self, std_id, std_name, classification, avg_gpa, ):
+        self.std_id = int(std_id)
+        self.std_name = str(std_name)
+        self.classification = int(classification)
+        self.avg_gpa = float(avg_gpa)
+    
+    def print_std_details(self):
+        print("{} |{} |{}| {}|".format(self.std_id, self.std_name, self.classification, self.avg_gpa))
+
+std_1 = Student(10015, 'Smith, John', 4, 3.01)
+std_2 = Student(10167, 'Jones, Wendy', 1, 2.85)
+std_3 = Student(10175, 'Smith, Jane', 4, 3.92)
+std_4 = Student(10188, 'Wales, Sam', 4, 3.25)
+std_5 = Student(10200, 'Robert, Sally', 4, 4.00)
+std_6 = Student(10208, 'Green, Patrick', 1, 3.85)
+std_7 = Student(10226, 'Nelson, Amy', 3, 2.95)
+std_8 = Student(10334, 'Roberts, Jane', 3, 3.81)
+std_9 = Student(10387, 'Taylor, Susan', 3, 3.33)
+std_10 = Student(10400, 'Logan, Mark', 1, 3.3)
+std_11 = Student(10485, 'Brown, Jessica', 3, 2.91)
+std_1.print_std_details()
+std_2.print_std_details()
+std_3.print_std_details()
+std_4.print_std_details()
+std_5.print_std_details()
+std_6.print_std_details()
+std_7.print_std_details()
+std_8.print_std_details()
+std_9.print_std_details()
+std_10.print_std_details()
+std_11.print_std_details()
