@@ -19,20 +19,19 @@ class Matrix:
         self.columns = columns
         self.matrix = [[(row, col) for col in range(columns)] for row in range(rows)]
         if v == True:
-            print('Created a {self.row} rows by {self.columns} columns matrix')
+            print('Created a {} rows by {} columns matrix'.format(self.rows, self.columns))
             print('---' * columns)
             self.printer()
-            print('-----'*columns)
+            print('---'*columns)
     
     def printer(self, v=False):
         if v == True:
-            print('a {self.row} by {self.columns} matrix')
+            print('a {} by {} matrix'.format(self.row,self.columns))
         for row in self.matrix:
             print(row)
             
     def get_row(self, n, v =False):
         if v == False:
-            print('matrix [row{n}..')
             print(self.matrix(n))
         return self.matrix[n]
     
@@ -43,7 +42,6 @@ class Matrix:
             items.append(self.matrix[i][n])
             i += 1
         if v == True:
-            print('matrix[col={n}]..')
             for item in items:
                 print(item)
         return items
